@@ -54,6 +54,8 @@
 		43F88D3B217F7446001113A6 /* lyricsGetter */ = {
 			isa = PBXGroup;
 			children = (
+				43F88D4F217F74AF001113A6 /* New Group1 */,
+				43F88D4E217F74AC001113A6 /* New Group */,
 				43F88D3C217F7446001113A6 /* AppDelegate.swift */,
 				43F88D3E217F7446001113A6 /* ViewController.swift */,
 				43F88D40217F7446001113A6 /* Main.storyboard */,
@@ -62,6 +64,20 @@
 				43F88D48217F7447001113A6 /* Info.plist */,
 			);
 			path = lyricsGetter;
+			sourceTree = "<group>";
+		};
+		43F88D4E217F74AC001113A6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		43F88D4F217F74AF001113A6 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

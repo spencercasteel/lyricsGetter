@@ -65,7 +65,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Our lyrics will go here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-lq-srt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="lyrics will display here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-lq-srt">
                                 <rect key="frame" x="8" y="323" width="359" height="336"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

@@ -61,9 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             case .success(let Value):
                //in the case of success, the request has succeeded, and we've gotten some data back
                 print("Success!")
-                
                 let json = JSON(Value)
-                
                 self.lyricsTextView.text = json["lyrics"].stringValue
             case .failure(let Error):
                 //in the case of failure, the request has failed and we've gotten an error back

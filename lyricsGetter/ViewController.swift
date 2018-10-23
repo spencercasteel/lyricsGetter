@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var artistTextFeild: UITextField!
     @IBOutlet weak var songTextFeild: UITextField!
     @IBOutlet weak var lyricsTextView: UITextView!
+    @IBOutlet weak var printBandAndSong: UILabel!
     
     //the base URL for the lyrics API, aka the point where we connect to it
     let lyricsAPIBaseURL = "https://api.lyrics.ovh/v1"
@@ -38,6 +39,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
         guard let artistName = artistTextFeild.text, let songTitle = songTextFeild.text else {
             return
         }
+        
+        self.printBandAndSong.text = "\(artistName) / \(songTitle)"
         
         //since we cant use spaces in our URL, we need to replace them with a +
         let artistNameURLComponent = artistName.replacingOccurrences(of: " ", with: "+")
@@ -66,6 +69,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 //in the case of failure, the request has failed and we've gotten an error back
                 print("Error. :(")
                 print(Error.localizedDescription)
+              
                 
             }
         }
